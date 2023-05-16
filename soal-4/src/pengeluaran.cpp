@@ -1,6 +1,6 @@
 #include "include/pengeluaran.hpp"
 
-Pengeluaran::Pengeluaran(int n, std::string d){
+Pengeluaran::Pengeluaran(long int n, std::string d){
     nilai = n;
     deskripsi = d;
 }

@@ -5,9 +5,9 @@
 
 class Pengeluaran {
     public:
-        int nilai;
+        long int nilai;
         std::string deskripsi;
-        Pengeluaran(int n, std::string d);
+        Pengeluaran(long int n, std::string d);
         void print();
 };
 

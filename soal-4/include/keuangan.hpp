@@ -10,8 +10,8 @@
 
 class Keuangan {
     private:
-        int totalPemasukan;
-        int totalPengeluaran;
+        long int totalPemasukan;
+        long int totalPengeluaran;
         std::vector<Pemasukan> m_pemasukan;
         std::vector<Pengeluaran> m_pengeluaran;
 

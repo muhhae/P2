@@ -8,17 +8,17 @@ Keuangan::Keuangan() {
 }
 
 void Keuangan::tambahPemasukan() {
-    int n; std::string d;
+    long int n; std::string d;
     std::cout<<"Jumlah : "; std::cin>> n; std::cin.ignore();
-    std::cout<<"Keterangan : "; std::cin>> d; getline(std::cin, d);
+    std::cout<<"Keterangan : "; std::getline(std::cin, d);
     totalPemasukan += n;
     m_pemasukan.push_back(Pemasukan(n, d));
 }
 
 void Keuangan::tambahPengeluaran() {
-    int n; std::string d;
+    long int n; std::string d;
     std::cout<<"Jumlah : "; std::cin>> n; std::cin.ignore();
-    std::cout<<"Keterangan : "; getline(std::cin, d);
+    std::cout<<"Keterangan : "; std::getline(std::cin, d);
     totalPengeluaran += n;
     m_pengeluaran.push_back(Pengeluaran(n, d));
 }
